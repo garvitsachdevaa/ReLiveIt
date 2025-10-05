@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReLiveIt</title>
+    <link rel="icon" href="movielogo-removebg-preview.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="movielogo-removebg-preview.png"
+        alt="ReLiveIt Logo"
+        class="brand-logo"
+      />
+
+      <form class="searchbar">
+        <input type="text" placeholder="Search Movies..." />
+        <button
+          style="padding: 4px 8px; font-size: 20px; width: auto; height: auto"
+        >
+          Search
+        </button>
+      </form>
+
+      <div class="genre-filters">
+        <button data-genre="Action">Action</button>
+        <button data-genre="Comedy">Comedy</button>
+        <button data-genre="Romance">Romance</button>
+      </div>
+    </header>
+
+    <main>
+      <h1>Welcome to ReLiveIt ...</h1>
+      <div class="movie-grid"></div>
+      <div class="pagination">
+        <button class="page-btn">Prev</button>
+        <span class="page-info">Page 1</span>
+        <button class="page-btn">Next</button>
+      </div>
+    </main>
+
+    <div id="movie-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="movie-details"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
